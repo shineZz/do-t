@@ -1,5 +1,5 @@
 # do-t
-
+股票做T粗略计算划不划算
 ## Project setup
 ```
 yarn install
@@ -7,7 +7,7 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+yarn start
 ```
 
 ### Compiles and minifies for production
@@ -20,6 +20,6 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-股票做T粗略计算划不划算
+<!-- ### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/). -->
+
