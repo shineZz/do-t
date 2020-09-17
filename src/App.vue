@@ -108,7 +108,8 @@ export default {
           result = val1 * num - val0 * num - cost
         }
         this.result = `盈利为${result}
-        费用为${cost}`
+        交易费用为${cost}
+        盈利百分比${(result/val0*num*100).toFixed(2)}%`
       } else {
         // if (state) {
         //   bool = (val1 * 100 * val2) / 10000 > 5
