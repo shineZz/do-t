@@ -12,7 +12,7 @@
             :step="0.01"
           ></el-input-number>
         </el-form-item>
-        <el-form-item label="是否计算费用" label-width="110px">
+        <el-form-item label="买入价是否已计算费用" label-width="180px">
           <el-switch v-model="form.state"></el-switch>
         </el-form-item>
         <el-form-item label="卖出价">
@@ -85,7 +85,7 @@ export default {
   methods: {
     handelClick(type) {
       let { val0, val1, num, val2, state } = this.form
-      if (!val0||!val1||!num) {
+      if (!val0 || !val1 || !num) {
         this.$message({
           message: '请按照提示要求输入',
           type: 'warning'
@@ -108,8 +108,8 @@ export default {
           result = val1 * num - val0 * num - cost
         }
         this.result = `盈利为${result}
-        交易费用为${cost}
-        盈利百分比${(result/val0*num*100).toFixed(2)}%`
+        交易费用为${cost} 盈利百分比${(result / (val0 * num) * 100).toFixed(2)}%
+        `
       } else {
         // if (state) {
         //   bool = (val1 * 100 * val2) / 10000 > 5
